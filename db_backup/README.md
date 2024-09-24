@@ -20,12 +20,12 @@ python3 db_backup.py --db_name <db_name> --user_name <user_name> --host <host> -
 ```
 
 ## Parameters:
---db_name: (Required) The name of the MySQL database to back up.
---user_name: (Required) The MySQL username with sufficient permissions.
---host: (Required) The MySQL host (e.g., localhost).
---port: (Optional) The MySQL port. Defaults to 3306.
---backup_path: (Required) The directory where backups and logs will be stored.
---copy_frequency: (Required) The interval between backups, in minutes.
+* --db_name: (Required) The name of the MySQL database to back up.
+* --user_name: (Required) The MySQL username with sufficient permissions.
+* --host: (Required) The MySQL host (e.g., localhost).
+* --port: (Optional) The MySQL port. Defaults to 3306.
+* --backup_path: (Required) The directory where backups and logs will be stored.
+* --copy_frequency: (Required) The interval between backups, in minutes.
 
 ## Example
 ```bash

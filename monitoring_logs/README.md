@@ -10,12 +10,12 @@ This Python script monitors system CPU and memory usage, logs the data at regula
 
 ## Usage
 ```bash
-python3 cpu_mem_monitor.py <log_directory_path> <time_interval_in_minutes>
+python3 monitoring_logs.py <log_directory_path> <time_interval_in_minutes>
 ```
 
 ## Example
 ```bash
-python3 cpu_mem_monitor.py /home/user/logs 5
+python3 monitoring_logs.py /home/user/logs 5
 ```
 
 ## Features
