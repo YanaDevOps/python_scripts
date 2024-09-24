@@ -15,6 +15,9 @@ logger.setLevel(logging.DEBUG)
 
 # Function to set up logging
 def setup_logger(log_path):
+    # Create log directory if not exists
+    os.makedirs(log_path, exist_ok=True)
+
     # Create log file path
     log_file = os.path.join(log_path, 'mysql_backup.log')
 
@@ -37,9 +40,6 @@ def mysql_backup(db_name, user_name, host, port, password, backup_path, copy_fre
         '-u', user_name,
         db_name
     ]
-
-    # Create a backup directory if it does not exist
-    os.makedirs(backup_path, exist_ok=True)
 
     # Set the environment variable for the password
     env = os.environ.copy()
